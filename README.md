@@ -26,6 +26,7 @@ Open http://localhost:3000 to view it in the browser.
 * [React Router](https://reactrouter.com)
 * [React Icons](https://react-icons.github.io/react-icons)
 * [Styled Components](https://styled-components.com)
+* [Games Database](https://rapidapi.com/digiwalls/api/free-to-play-games-database/)
 
 ### 💻 Author
 [Meu Linkedin](https://www.linkedin.com/in/giovannalinda)
