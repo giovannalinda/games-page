@@ -1,5 +1,6 @@
 import styled from 'styled-components/macro'
 import { theme } from '../../../ui'
+import banner from '../../../assets/modal.png'
 
 export const Modal = styled.div`
 width: 100%;
@@ -16,6 +17,9 @@ align-items: center;
 
 export const Container = styled.div`
 background: ${theme.colors.black};
+background-image: url(${banner});
+background-size: 100%;
+background-repeat: no-repeat;
 width: 60%;
 height: 60%;
 color: ${theme.colors.white};
@@ -29,8 +33,12 @@ button {
   top: 15px;
   right: calc(-100% + 352px);
 }
-`
 
-export const Content = styled.div`
-
+img {
+  height: 30px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 `

@@ -1,5 +1,6 @@
 import * as S from './Modal.styled'
 import { ReactNode } from 'react'
+import logo from '../../../assets/logo-battle.svg'
 
 import { FiX } from 'react-icons/fi'
 
@@ -13,8 +14,9 @@ const Modal = ({ children, onClose }: Props) => {
     <S.Modal>
       <S.Container>
         <button onClick={onClose} style={{ background: 'none' }}><FiX size={20} /></button>
+        <img src={logo} alt='logo' />
         <h1>Teste</h1>
-        <S.Content>{children}</S.Content>
+        {children}
       </S.Container>
     </S.Modal>
   )
