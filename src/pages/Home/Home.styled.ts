@@ -11,6 +11,7 @@ export const Container = styled.div`
     position: fixed;
     background: ${theme.colors.black};
     width: 100%;
+    z-index: 999;
   }
 `
 
@@ -119,9 +120,10 @@ export const ContentMain = styled.div`
     color: ${theme.colors.white};
     border: 1px solid ${theme.colors.white};
     border-radius: 4px;
+    transition: 1s;
 
-    img {
-      margin: -50px 0 0 90px;
+    :hover {
+      color: ${theme.colors.blue[100]}
     }
   }
 `
