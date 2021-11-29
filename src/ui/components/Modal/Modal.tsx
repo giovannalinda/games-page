@@ -48,7 +48,7 @@ const Modal = ({ children, onClose }: Props) => {
                 {...register('email', {
                   required: {
                     value: true,
-                    message: 'Email é obrigatório',
+                    message: 'E-mail é obrigatório',
                   },
                 })}
               />
