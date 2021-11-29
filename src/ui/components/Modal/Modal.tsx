@@ -4,7 +4,6 @@ import { ReactNode, useState } from 'react'
 import { useForm } from 'react-hook-form'
 import { useNavigate } from 'react-router'
 import { FiEye, FiX } from 'react-icons/fi'
-import { theme } from '../../styles/theme'
 
 type FormData = {
   email: string;
