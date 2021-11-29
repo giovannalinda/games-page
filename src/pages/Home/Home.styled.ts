@@ -3,59 +3,6 @@ import { theme } from '../../ui'
 
 export const Container = styled.div`
   margin: 0 auto;
-
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: fixed;
-    background: ${theme.colors.black};
-    width: 100%;
-  }
-`
-
-export const Nav = styled.nav`
-  ul {
-    margin: -70px 0 38px 290px;
-  }
-
-  li {
-    display: inline-block;
-    text-align: left;
-    margin: 0 0 0 70px;
-  }
-
-  a {
-    color: ${theme.colors.white};
-    transition: 1s;
-
-
-    :hover {
-      color: ${theme.colors.blue[100]};
-    }
-  }
-
-  img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    margin-left: 190px;
-  }
-
-  button {
-    background: ${theme.colors.blue[100]};
-    border: 0;
-    color: ${theme.colors.white};
-    width: 115px;
-    height: 41px;
-    border-radius: 4px;
-    transition: 1s;
-    margin-left: 300px;
-
-    :hover {
-      opacity: 85%;
-    }
-  }
 `
 
 export const ContentHeader = styled.div`
@@ -79,7 +26,7 @@ export const ContentHeader = styled.div`
   }
 
   a {
-    background: ${theme.colors.blue[100]};
+    background: ${theme.colors.blue};
     border: 0;
     color: ${theme.colors.white};
     padding: 15px 45px 15px 45px;
@@ -112,35 +59,70 @@ export const ContainerMain = styled.div`
 `
 
 export const ContentMain = styled.div`
-  button {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 250px));
+    text-align: center;
+    justify-content: center;
+    margin: 0 0 20px 0;
+    grid-row-gap: 10px;
+  }
+
+  img {
+    width: 280px;
+    height: 250px;
+    border-radius: 4px;
+    padding-left: 10px;
+    transition: 1s;
+    cursor: pointer;
+
+    :hover {
+      opacity: 85%;
+      width: 290px;
+      height: 270px;
+    }
+  }
+
+  span {
+    cursor: pointer;
+    transition: 1s;
+
+    :hover {
+      color: ${theme.colors.blue}
+    }
+  }
+
+  a {
     width: 280px;
     height: 384px;
     background: none;
-    color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.white};
-    border-radius: 4px;
+    color: ${theme.colors.blue};
+    transition: 1s;
+    text-decoration: underline;
+    margin: 0 0 0 80px;
 
-    img {
-      margin: -50px 0 0 90px;
+    :hover {
+      color: ${theme.colors.blue[100]}
     }
   }
 `
-
 export const Footer = styled.footer`
+  margin-top: -170px;
+
   img {
     width: 100%;
     height: 891px;
   }
 
   button {
-    background: ${theme.colors.blue[100]};
+    background: ${theme.colors.blue};
     border: 0;
     color: ${theme.colors.white};
     width: 266px;
     height: 52px;
     border-radius: 4px;
     transition: 1s;
-    margin: 42px 0 0 0;
+    margin: 42px 0 20px 0;
 
     :hover {
       opacity: 85%;
@@ -159,12 +141,25 @@ export const Footer = styled.footer`
   }
 
   ul {
-    margin: -600px 0 0 112px;
+    margin: -600px 0 0 190px;
   }
 
   li {
     margin-bottom: 24px;
     opacity: 70%;
     font-size: 18px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 280px;
+    padding-bottom: 30px;
+  }
+
+  span {
+    margin: 0 0 0 190px;
+    font-size: 14px;
   }
 `

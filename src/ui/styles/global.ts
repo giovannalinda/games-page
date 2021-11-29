@@ -30,6 +30,6 @@ export const GlobalStyle = createGlobalStyle`
 
   &::selection {
     color: ${theme.colors.white};
-    background: ${theme.colors.blue[100]};
+    background: ${theme.colors.blue};
   }
 `
